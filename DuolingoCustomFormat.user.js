@@ -2,7 +2,7 @@
 // @name           Duolingo Custom Format
 // @description    Adds/Changes Formatting on Duolingo (web)
 // @match          https://www.duolingo.com/*
-// @version        0.1.0
+// @version        0.1.1
 // @updateURL      https://github.com/kpatelPro/duolingo-custom-format/raw/master/DuolingoCustomFormat.user.js
 // @downloadURL    https://github.com/kpatelPro/duolingo-custom-format/raw/master/DuolingoCustomFormat.user.js
 // @require        http://code.jquery.com/jquery-1.7.2.min.js
@@ -50,7 +50,7 @@ function main() {
 		for (q=0; q<elementQueries.length; ++q) {
 			var summary = obj[q];
 			summary.added.forEach(function(el) {
-				alert('elCheck');
+				//alert('elCheck');
 				var element = $(el);
 				if ((typeof element != 'undefined') && (element !== null)) {
 				    var targetElement = $(element); //.find(".classname").first();
@@ -69,7 +69,7 @@ function main() {
 
 function manipulateTargetElement(targetElement, changesDictionary)
 {
-alert('manip');
+	//alert('manip');
 	Object.keys(changesDictionary).forEach(function(changeType) {
 		var changeValuesDictionary = changesDictionary[changeType];
 		Object.keys(changeValuesDictionary).forEach(function(changeKey) {
